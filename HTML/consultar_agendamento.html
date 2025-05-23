@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consultar Agendamento - Lembre Saúde</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="../img/logo-hc.png" alt="Logo HC" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="solucao.html">Solução</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="quem-somos.html">Quem Somos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="consultar">
+    <a href="lembresaude.html">Cadastro e Agendamento</a>
+    </nav>
+    <h1>Consultar Agendamento</h1>
+
+    <form id="consulta-agendamento-form">
+      <label for="documento">Documento (RG ou CPF) ou Telefone:</label>
+      <input type="text" id="documento" name="documento" required />
+
+      <button type="submit">Consultar</button>
+    </form>
+
+    <section id="resultado-consulta" style="margin-top: 20px; display: none;">
+      <h2>Resultado da Consulta</h2>
+      <div style="background-color: #f0f0f0; padding: 15px; border-radius: 8px;">
+        <p id="resposta-consulta"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lembre Saúde - Projeto Challenge FIAP & HCFMUSP</p>
+    </div>
+  </footer>
+</body>
+</html>
