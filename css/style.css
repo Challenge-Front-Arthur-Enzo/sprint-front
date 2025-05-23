@@ -1,0 +1,262 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #1d9ae2;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #1d9ae2;
+    color: white;
+    height: 80px;
+  }
+  
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #e0f0ff;
+  }
+  
+  /* Hero / Index */
+  .hero {
+    background-color: #e6f0fa;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: #0073b7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #005b91;
+  }
+
+  .consultar {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #003e63;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+  }
+  
+  /* Formulário */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  form input,
+  form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    background-color: #0073b7;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #005b91;
+  }
+  
+  /* Mensagem de retorno */
+  .retorno {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Página de Integrantes */
+  .integrantes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .membro {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+  
+  .membro img {
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* ============================
+     Breakpoints para Responsividade
+  ============================ */
+  
+  /* Extra Small devices (phones, 600px and down) */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero h1 {
+      font-size: 1.6rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .membro {
+      text-align: center;
+    }
+  
+    .membro img {
+      width: 100px;
+    }
+  
+    form input, form textarea {
+      width: 100%;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media (min-width: 600px) {
+    .container {
+      padding: 20px 30px;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .hero h1 {
+      font-size: 2.3rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) {
+    nav ul {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .container {
+      padding: 20px 50px;
+    }
+  }
+  
+  /* Extra-Large devices (large laptops and desktops, 1300px and up) */
+  @media (min-width: 1300px) {
+    .container {
+      max-width: 1300px;
+    }
+  
+    .hero {
+      padding: 80px 0;
+    }
+  
+    .hero h1 {
+      font-size: 2.8rem;
+    }
+  }
+  
