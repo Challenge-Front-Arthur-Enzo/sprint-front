@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro e Agendamento - Lembre Saúde</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="../img/logo-hc.png" alt="Logo HC" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="solucao.html">Solução</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="quemsomos.html">Quem Somos</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="consultar">
+    <a href="consultar_agendamento.html">Consultar Agendamento</a>
+    </nav>
+    <h1>Cadastro de Paciente e Agendamento</h1>
+
+    <form id="cadastro-form">
+      <h2>Dados do Paciente</h2>
+      <label>Nome:</label>
+      <input type="text" name="paciente_nome" required>
+
+      <label>Telefone:</label>
+      <input type="tel" name="paciente_telefone" required>
+
+      <label>Data de Nascimento:</label>
+      <input type="date" name="paciente_nascimento" required>
+
+      <label>Documento (RG/CPF):</label>
+      <input type="text" name="paciente_documento" required>
+
+      <label>Email:</label>
+      <input type="email" name="paciente_email" required>
+
+      <label>Endereço:</label>
+      <input type="text" name="paciente_endereco" required>
+
+      <h2>Dados do Cuidador</h2>
+      <label>Nome do Cuidador:</label>
+      <input type="text" name="cuidador_nome" required>
+
+      <label>Telefone do Cuidador:</label>
+      <input type="tel" name="cuidador_telefone" required>
+
+      <label>Documento (RG/CPF):</label>
+      <input type="text" name="cuidador_documento" required>
+
+      <label>Acompanhante de (nome do paciente):</label>
+      <input type="text" name="acompanhando" required>
+
+      <h2>Agendamento de Consulta</h2>
+      <label>Nome do Paciente:</label>
+      <input type="text" name="agendamento_paciente" required>
+
+      <label>Data da Consulta:</label>
+      <input type="date" name="agendamento_data" required>
+
+      <label>Horário da Consulta:</label>
+      <input type="time" name="agendamento_horario" required>
+
+      <label>Tipo de Consulta:</label>
+      <select name="tipo_consulta" required>
+        <option value="">Selecione</option>
+        <option value="Teleatendimento">Teleatendimento</option>
+        <option value="Presencial">Consulta Presencial</option>
+      </select>
+
+      <button type="submit">Cadastrar e Agendar</button>
+    </form>
+
+    <section id="simulador-whatsapp" style="display:none; margin-top: 30px;">
+      <h2>Simulação da Mensagem no WhatsApp</h2>
+      <div style="background-color:#dcf8c6; border:1px solid #ccc; padding:15px; border-radius:10px;">
+        <p id="mensagem-lembrete"></p>
+        <button onclick="confirmarPresenca()">✅ Confirmar</button>
+        <button onclick="reagendarConsulta()">📆 Reagendar</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lembre Saúde - Projeto Challenge FIAP & HCFMUSP</p>
+    </div>
+  </footer>
+</body>
+</html>
